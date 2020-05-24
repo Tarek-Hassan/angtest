@@ -1,1 +1,17 @@
-<p>posts works!</p>
+<!-- <p>posts works!</p> -->
+<div style="padding: 13px;">
+    <p *ngIf="posts_arr.length === 0"></p>
+
+    <div *ngFor="let post of posts_arr" style="margin-top:10px;">
+        <header>
+            <h2>{{post.title}}</h2>
+        </header>
+        <div>
+            <p>
+                {{post.content}}
+            </p>
+            <!-- <img style="height:100%; width: 100%;" src="{{ product.imageUrl }}" /> -->
+        </div>
+        <!-- <button type="submit" class="btn btn-primary">Save</button> -->
+    </div>
+</div>

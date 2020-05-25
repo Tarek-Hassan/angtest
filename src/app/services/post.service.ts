@@ -12,6 +12,9 @@ export class PostService {
   constructor(private httpClient: HttpClient) { }
 
   public sendGetRequest(){
+    
+    console.log('send get request');
+    
     return this.httpClient.get(this._postApi);
   }
 }
